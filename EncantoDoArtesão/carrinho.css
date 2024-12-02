@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+  }
+  
+  
+  .header {
+    background-color: #0f0f0f; 
+    color: #fff;
+    padding: 15px 20px;
+  }
+
+  .header h1{
+    color: white;
+    margin: 0;
+    font-family: "Great Vibes", cursive;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal; 
+  }
+  header a{
+    text-decoration: none;
+  }
+
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  
+  .cart {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h2 {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .product-image {
+    width: 80px;
+    margin-right: 15px;
+  }
+  
+  .product-details {
+    flex: 2;
+  }
+  
+  .product-details h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .product-details span {
+    color: #999;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .quantity-controls button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .quantity-controls input {
+    width: 40px;
+    text-align: center;
+  }
+  
+  .total-price {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .remove-button {
+    background-color: #3a2c1cf1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  .summary {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary h2 {
+    margin-bottom: 15px;
+  }
+  
+  .summary .coupon, .summary .shipping {
+    margin-bottom: 15px;
+  }
+  
+  .summary input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .summary button {
+    width: 100%;
+    padding: 10px;
+    background-color:  #3a2c1cf1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .summary button:hover {
+    background-color: #5b3826;
+  }
+  

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link href="carrinho.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <a href="index.html"><h1>Encanto do Artesão</h1></a>
+      <nav>
+        <a href="perfil.html">Minha Conta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cart">
+      <h2>Seu carrinho</h2>
+      <div class="cart-item">
+        <img src="imagens/Café1.png" alt="Filtro de Cafe"  class="product-image">
+        <div class="product-details">
+          <h3>Produto 1</h3>
+          <p>Filtro de Café</p>
+          <span>R$ 29,90</span>
+        </div>
+        <div class="quantity-controls">
+          <button>-</button>
+          <input type="number" value="1" min="1">
+          <button>+</button>
+        </div>
+        <span class="total-price">R$ 29,90</span>
+        <button class="remove-button">Remover</button>
+      </div>
+
+      <div class="cart-item">
+        <img src="imagens/Brinco colorfull2.png" alt="Filtro de Cafe"  class="product-image">
+        <div class="product-details">
+          <h3>Produto 2</h3>
+          <p>Brinco Colorfull</p>
+          <span>R$ 39,90</span>
+        </div>
+        <div class="quantity-controls">
+          <button>-</button>
+          <input type="number" value="1" min="1">
+          <button>+</button>
+        </div>
+        <span class="total-price">R$ 39,90</span>
+        <button class="remove-button">Remover</button>
+      </div>
+
+      <div class="cart-item">
+        <img src="imagens/Kit em ceramica.png" alt="Filtro de Cafe"  class="product-image">
+        <div class="product-details">
+          <h3>Produto 2</h3>
+          <p>Kit para Sushi - Japonês</p>
+          <span>R$ 150,00</span>
+        </div>
+        <div class="quantity-controls">
+          <button>-</button>
+          <input type="number" value="1" min="1">
+          <button>+</button>
+        </div>
+        <span class="total-price">R$ 150,00</span>
+        <button class="remove-button">Remover</button>
+      </div>
+
+    </section>
+
+    <aside class="summary">
+      <h2>Resumo do Pedido</h2>
+      <p>Parabéns, você ganhou frete grátis!</p>
+      <div class="cupom">
+        <label for="cupom">Insira o cupom:</label>
+        <input type="text" id="cupom" placeholder="Digite o código">
+        <button>Adicionar</button>
+      </div>
+      <div class="shipping">
+        <label for="cep">Insira o CEP:</label>
+        <input type="text" id="cep" placeholder="Digite o CEP">
+        <button>OK</button>
+      </div>
+      <div class="order-summary">
+        <p><strong>Subtotal:</strong> R$ 219,80</p>
+        <button class="checkout-button">Finalizar Compra</button>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="perfil.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>Meu Perfil</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html"><h1>Encanto do Artesão</h1></a>
+        </div>
+
+        <div class="profile-container">
+          <img src="imagens/perfil.png" alt="Ícone de Perfil" class="profile-icon" id="profileIcon">
+          <div class="menu-container" id="menuContainer">
+              <div class="menu-content">
+                  <h3>Perfil</h3>
+                  <hr>
+                  <div class="icons">
+                    <a href="#" class="sub-menu-link">
+                      <i class="bi bi-person-fill"></i>
+                      <p>Edit Profile</p>
+
+                      <a href="#" class="sub-menu-link">
+                        <i class="bi bi-gear-fill"></i>
+                        <p>Configurações e Privacidade</p>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                      <i class="bi bi-question-circle"></i>
+                      <p>Ajuda e Suporte</p>
+                  </a>
+
+                    <a href="#" class="sub-menu-link">
+                      <i class="bi bi-box-arrow-right"></i>
+                      <p>Logout</p>
+                  </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </header>
+
+
+        <div class="container">
+          <h1>Minhas informações</h1>
+          <div class="grid">
+            <div class="card">
+              <img src="imagens/Rastreio.png" alt="Ícone de pedidos">
+              <h2>Seus pedidos</h2>
+              <p>Rastrear, devolver ou comprar produtos novamente</p>
+            </div>
+
+            <div class="card">
+              <img src="imagens/Segurança.png" alt="Ícone de segurança">
+              <h2>Acesso e segurança</h2>
+              <p>Gerenciar senha, e-mail, CPF e número de celular</p>
+            </div>
+
+            <div class="card">
+              <img src="imagens/endereço.png" alt="Ícone de endereços">
+              <h2>Seus endereços</h2>
+              <p>Alterar endereços para pedidos e presentes</p>
+            </div>
+
+            <div class="card">
+              <img src="imagens/Pagamento.png" alt="Ícone de pagamentos">
+              <h2>Seus pagamentos</h2>
+              <p>Gerenciar ou adicionar formas de pagamento e ver suas transações</p>
+            </div>
+
+            <div class="card">
+              <img src="imagens/Reembolso.png" alt="Ícone de reembolsos">
+              <h2>Reembolsos Boleto/Pix</h2>
+              <p>Ver saldo ou resgatar reembolsos de Boleto e Pix</p>
+            </div>
+          
+            <div class="card">
+              <img src="imagens/Mensagens2.png" alt="Ícone de mensagens">
+              <h2>Suas mensagens</h2>
+              <p>Visualize ou responda às mensagens da Amazon, vendedores e compradores</p>
+            </div>
+          </div>
+        </div>
+
+
+      <script>
+        // Exibe ou oculta o menu ao clicar no ícone
+const profileIcon = document.getElementById('profileIcon');
+const menuContainer = document.getElementById('menuContainer');
+
+profileIcon.addEventListener('click', () => {
+    menuContainer.classList.toggle('active');
+});
+
+// Fecha o menu ao clicar fora dele
+document.addEventListener('click', (event) => {
+    if (!profileIcon.contains(event.target) && !menuContainer.contains(event.target)) {
+        menuContainer.classList.remove('active');
+    }
+});
+
+      </script>
+</body>
+</html>
